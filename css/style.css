@@ -3,10 +3,10 @@
 
 /*--------------------------------------------------------------------- import Fonts ---------------------------------------------------------------------*/
 
-@import url('https://fonts.googleapis.com/css?family=Rajdhani:300,400,500,600,700');
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i');
 @font-face {
-    font-family: "Righteous";
+    font-family: "DM+Serif+Display";
     src: url("../fonts/BalooChettan-Regular.ttf");
     src: url("../fonts/BalooChettan-Regular.ttf");
 }
@@ -52,7 +52,7 @@ body {
 }
 
 a {
-    color: #1f1f1f;
+    color: #012A30;
     text-decoration: none !important;
     outline: none !important;
     -webkit-transition: all .3s ease-in-out;
@@ -187,7 +187,7 @@ img {
 }
 
 .form-control:focus {
-    border-color: #ffffff !important;
+    border-color: #F9EFE3 !important;
     box-shadow: 0 0 0 .2rem rgba(255, 255, 255, .25);
 }
 
@@ -318,14 +318,14 @@ button {
 }
 
 .menu_main li a {
-    color: #ffffff;
+    color: #F9EFE3;
     padding: 10px 20px;
     border-radius: 10px;
 }
 
 .menu_main li a:hover {
-    color: #ffffff;
-    background-color: #cecbe4;
+    color: #F9EFE3;
+    background-color: #D1C5B8;
 }
 
 .mb-lg-0,
@@ -341,13 +341,10 @@ button {
     background-size: 100%;
     padding: 10px 0px 0px 0px;
 }
-
-
 /* header section end */
 
 
 /* banner section start */
-
 .banner_section {
     width: 100%;
     float: left;
@@ -358,18 +355,18 @@ button {
     width: 100%;
     float: left;
     font-size: 80px;
-    color: #ffffff;
+    color: #F9EFE3;
     font-weight: bold;
     text-align: center;
     text-transform: uppercase;
-    font-family: 'Righteous', Regular;
+    font-family: 'DM+Serif+Display', Regular;
 }
 
 .banner_text {
     width: 63%;
     margin: 0 auto;
     font-size: 16px;
-    color: #ffffff;
+    color: #F9EFE3;
     text-align: center;
 }
 
@@ -384,7 +381,7 @@ button {
     float: left;
     font-size: 16px;
     color: #141414;
-    background-color: #ffffff;
+    background-color: #F9EFE3;
     text-align: center;
     padding: 10px 0px;
     border-radius: 30px;
@@ -394,7 +391,7 @@ button {
 
 .read_bt a:hover {
     background-color: #2b2278;
-    color: #ffffff;
+    color: #F9EFE3;
 }
 
 
@@ -451,8 +448,8 @@ button {
     width: 100%;
     float: left;
     font-size: 16px;
-    color: #ffffff;
-    background-color: #9B5366;
+    color: #F9EFE3;
+    background-color: #6F8686;
     text-align: center;
     padding: 10px 0px;
     border-radius: 30px;
@@ -462,7 +459,7 @@ button {
 }
 
 /*.btn_main a:hover {
-    color: #ffffff;
+    color: #F9EFE3;
     background-color: #43507B;
 }*/
 
@@ -470,7 +467,6 @@ button {
     color: #ffffff;
     background-color: #43507B;
 }
-
 /* services section end */
 
 
@@ -561,7 +557,7 @@ button {
     width: 100%;
     float: left;
     font-size: 40px;
-    color: #ffffff;
+    color: #F9EFE3;
     font-weight: bold;
     padding-top: 30px;
     text-align: center;
@@ -571,7 +567,7 @@ button {
     width: 80%;
     margin: 0 auto;
     font-size: 16px;
-    color: #ffffff;
+    color: #F9EFE3;
     padding-top: 40px;
     text-align: center;
 }
@@ -597,7 +593,7 @@ button {
     width: 130px;
     height: 130px;
     transform: translate(-50%, -50%);
-    background-color: #ffffff;
+    background-color: #F9EFE3;
     border-radius: 100%;
     z-index: -1;
     animation: fadeEffect 1.3s infinite ease;
@@ -643,7 +639,7 @@ button {
     width: 100%;
     margin: 0 auto;
     text-align: center;
-    background-color: #ffffff;
+    background-color: #F9EFE3;
     box-shadow: 0px 1px 16px -6px;
     border-radius: 30px;
     padding: 50px 70px;
@@ -732,7 +728,7 @@ button {
 }
 
 .carousel-indicators .active {
-    background-color: #2b2278;
+    background-color: #15bd50;
 }
 
 
@@ -774,7 +770,7 @@ button {
     width: 100%;
     float: left;
     font-size: 16px;
-    color: #ffffff;
+    color: #F9EFE3;
     background-color: #000d10;
     text-align: center;
     padding: 10px 0px;
@@ -786,7 +782,7 @@ button {
 
 .read_bt_1 a:hover {
     background-color: #2b2278;
-    color: #ffffff;
+    color: #F9EFE3;
 }
 
 .newsletter_box {
@@ -816,7 +812,7 @@ button {
     width: 100%;
     float: left;
     font-size: 16px;
-    color: #ffffff;
+    color: #F9EFE3;
     background-color: #2b2278;
     text-align: center;
     padding: 10px 0px;
@@ -826,14 +822,11 @@ button {
 
 .getquote_bt a:hover {
     background-color: #000d10;
-    color: #ffffff;
+    color: #F9EFE3;
 }
-
-
 /* choose section end */
 
 /* contact section start */
-
 .contact_section {
     width: 100%;
     float: left;
@@ -883,13 +876,13 @@ button {
     float: right;
     text-align: center;
     font-size: 20px;
-    color: #ffffff;
+    color: #F9EFE3;
     border-radius: 30px;
     background-color: #000d10;
     padding: 7px;
 }
 .send_btn a:hover {
-    color: #ffffff;
+    color: #F9EFE3;
     background-color: #2b2278;
 }
 /* contact section end */
@@ -923,7 +916,7 @@ button {
     float: left;
     font-size: 18px;
     color: #2b2c2c;
-    background-color: #ffffff;
+    background-color: #F9EFE3;
     height: auto;
     padding: 5px 20px;
     border-radius: 20px;
@@ -938,7 +931,7 @@ button {
     width: 170px;
     float: left;
     font-size: 18px;
-    color: #2b2278;
+    color: #090909;
     background-color: transparent;
     padding: 5px 0px;
     text-align: center;
@@ -980,39 +973,37 @@ button {
     width: 100%;
     float: left;
     font-size: 16px;
-    color: #ffffff;
+    color: #F9EFE3;
     padding-top: 10px
 }
 
 .call_text a {
-    color: #ffffff;
+    color: #F9EFE3;
 }
 
 .call_text a:hover {
     color: #e27141;
 }
-
-
 /* footer section end */
 
 .copyright_section {
     width: 100%;
     float: left;
-    background-color: #122c2d;
+    background-color: #012A30;
     height: auto;
 }
 
 .copyright_text {
     width: 100%;
     float: left;
-    color: #ffffff;
+    color: #F9EFE3;
     text-align: center;
-    font-size: 16px;
+    font-size: 12px;
     margin-left: 0px;
 }
 
 .copyright_text a {
-    color: #ffffff;
+    color: #F9EFE3;
 }
 
 .copyright_text a:hover {
