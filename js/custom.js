@@ -367,5 +367,21 @@ $(function () {
         interval: 5000
      });
 
+	/* Ajout perso - by Rachel */
+
+	/* Social Media / location */
+	$(document).ready(function () {
+		$("#copyEmail").on("click", function (e) {
+		  e.preventDefault();
+		  const email = "la.pomme.de.pin@Blabla.fr";
+		  navigator.clipboard.writeText(email).then(() => {
+			$("#copyMsg").fadeIn(200);
+
+				setTimeout(() => {
+				$("#copyMsg").fadeOut(300);
+				}, 2000);
+		  	});
+		});
+	});
 
 });
