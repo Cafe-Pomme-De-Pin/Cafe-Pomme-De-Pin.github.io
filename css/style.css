@@ -225,6 +225,9 @@ button {
     padding: 0px;
 }
 
+.mobile-break { /* Permet au texte indiquer de passer a la ligne  */
+    display: none;
+}
 
 /* header section start */
 

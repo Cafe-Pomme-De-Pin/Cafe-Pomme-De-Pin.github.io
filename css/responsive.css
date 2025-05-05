@@ -136,7 +136,7 @@
         padding-top: 40px;   
     }
     .about_taital {
-        font-size: 30px; /* Taille titre */
+        font-size: 27px; /* Taille titre */
         padding: 7% 0 0 0;
     }
     .about_text {
@@ -292,6 +292,10 @@
         display: none;     /* Cache la version desktop du menu */
     }
 
+    .mobile-break { /* Permet au texte indiquer de passer a la ligne */
+        display: inline;
+    }
+
     /* Logo */
     .logo{
         display: none;
@@ -391,7 +395,7 @@
         width: 80%;
         margin: 0 auto;
         font-family: 'DM+Serif+Display', serif;
-        font-size: 17px;  /* taille  texte */
+        font-size: 16px;  /* taille  texte */
         color: #012a30;
         text-align: center;
         padding-bottom: 20px;
@@ -606,7 +610,7 @@
 
     /*Copyright*/
     .copyright_text {
-        font-size: 12px; /* Réduit la taille de la police */
+        font-size: 10px; /* Réduit la taille de la police */
         margin: 20px 0 5px 0;
     }
 
