@@ -380,7 +380,7 @@
 
     /* Titre */
     .banner_taital {
-        font-size: 40px;  /* Taille titre */
+        font-size: 35px;  /* Taille titre */
         color: #012a30;
         font-weight: bold;
         text-align: center;
@@ -395,7 +395,7 @@
         width: 80%;
         margin: 0 auto;
         font-family: 'DM+Serif+Display', serif;
-        font-size: 16px;  /* taille  texte */
+        font-size: 14px;  /* taille  texte */
         color: #012a30;
         text-align: center;
         padding-bottom: 20px;
