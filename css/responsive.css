@@ -345,8 +345,8 @@
         transition: background 0.3s;
     }
     .nav-link:hover {
-        background-color: #D1C5B8;
-        color: #D6877F !important;
+        background-color: #D6877F;
+        color: #012A30 !important;
     }
     /* Banniere */
     .header_main {
@@ -381,7 +381,7 @@
         font-weight: bold;
         text-align: center;
         text-transform: uppercase;
-        font-family: 'DM+Serif+Display', Regular;
+        font-family: 'DM+Serif+Display', serif;
         padding-top: 20px; /* Espace au-dessus du titre */
         margin: 0;
     }
@@ -390,7 +390,8 @@
     .banner_text {
         width: 80%;
         margin: 0 auto;
-        font-size: 14px;  /* taille  texte */
+        font-family: 'DM+Serif+Display', serif;
+        font-size: 17px;  /* taille  texte */
         color: #012a30;
         text-align: center;
         padding-bottom: 20px;
