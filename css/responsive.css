@@ -1,4 +1,4 @@
-/*----------------------------------------- File Name: responsive_test.css ---------------------------------------------------------------------*/
+/*----------------------------------------- File Name: responsive.css ---------------------------------------------------------------------*/
 
 /*----------------------------------------- Onglet recherche - Tablette portrait / petit ecran ordi - 991px x 768px ---------------------------------------------------------------------*/
 
@@ -10,29 +10,110 @@
 
 
 /*----------------------------------------- ORDINATEUR ---------------------------------------------------------------------*/
-/*-------------- A REVOIR -------------------- Très grand écran - 1368px ---------------------------------------------------------------------*/
-@media (min-width: px) {
-    .content-section {
-        width: 85%; 
-        margin: 0 auto;
+/*----------------------------------------- Très grand écran - 1920px ------------------------------------------------------------------------*/
+/*----------------------------------------- Type moniteur 2k+ --------------------------------------------------------------------------------*/
+
+@media (min-width: 1920px) {
+    /* Navbar */
+    /* Onglets */
+    .menu_main li {
+        font-size: 22px;
+        padding-top: 14px;
+        padding-bottom: 14px;
+    }
+    .menu_main li a {
+        padding: 14px 30px; /* plus de "surface cliquable" */
+        background-size: 100%; /* Taille des img onglets*/
     }
 
-    .image-container {
-        max-width: 100%; 
-        height: auto;
+    /* Banniere */
+    .banner_section{
+        padding-bottom: 29%;
+    }
+    .banner_taital{
+        font-size: 99px;
+    }
+    .banner_text{
+        font-size: 25px;
     }
 
-    .header {
-        font-size: 1.5rem; 
-    }
-
-    .container { /*avec flexbox*/
+   /*................... INDEX ...................*/
+   
+   .row {
         display: flex;
-        flex-direction: row; 
-        justify-content: space-between; 
-        align-items: center;
+        justify-content: center;
+        flex-wrap: nowrap;
+        gap: 8%; /* espace entre img */
     }
+
+    /* IMG locaux */
+   .index_section {
+        background-size: cover;
+        height: 790px;
+    }
+    .services_section_index {
+        margin-top: 10%;
+    }
+    .services_img_index {
+        width: 100%;
+        max-width: none;
+        height: auto;
+        transform: scale(1.3);
+        transition: transform 0.3s ease;  
+    }
+    .services_taital_index {
+        font-size: 48px;
+        text-align: center;
+        color: #012A30;
+        margin-top: 20px;
+        height: 340px;
+    }
+    .col-md-4 {
+        flex: 0 0 33.33%;
+        max-width: 33.33%;
+        display: flex;
+        justify-content: center;
+        padding: 0 20px; /* Ajoute un espace horizontal entre les images */
+        box-sizing: border-box;
+    }
+
+    /* A propos */
+    .about_section_index {
+        padding-bottom: 100px;
+        padding-top: 10%;
+    }
+    .about_taital_main_index {
+        padding-left: 80px;
+        padding-top: 80px;
+    }
+    .about_taital_index {
+        font-size: 60px;
+    }
+    .about_text_index {
+        font-size: 20px;
+        padding-top: 30px;
+    }
+    .readmore_bt{
+        font-size: 17px;
+    }
+    .about_img_texte_index {
+        width: 100%;
+        padding-top: 15%;
+    }
+
 }
+
+/*----------------------------------------- Grand écran - 1440px - 1919px ---------------------------------------------------------------------*/
+@media (min-width: 1440px) and (max-width: 1919px) {
+
+}
+
+
+/*-----------------------------------------  HD - 1200px - 1439px -----------------------------------------------------------------------------*/
+@media (min-width: 1200px) and (max-width: 1439px) {
+
+}
+
 
 /*----------------------------------------- TABLETTE ---------------------------------------------------------------------*/
 /*----------------------------------------- Type IPAD PRO - 1366px x 992px ---------------------------------------------------------------------*/
@@ -278,6 +359,14 @@
       font-size: 50px;
     }
 }
+
+/*----------------------------------------- Petite tablette - 768px - 991px ---------------------------------------------------------------------*/
+/*----------------------------------------- Type Galaxy-tab, Ipad -------------------------------------------------------------------------------*/
+
+@media (min-width: 768px) and (max-width: 991px) {
+
+}
+
 
 
 /*----------------------------------------- TELEPHONE ---------------------------------------------------------------------*/
