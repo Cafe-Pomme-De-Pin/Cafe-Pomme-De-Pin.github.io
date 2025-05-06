@@ -117,21 +117,25 @@
     /*................... GALERIE ...................*/
 
     .gallery-container {
-        padding: 4rem 4rem;
-        max-width: 160rem; 
+        padding: 4rem 3rem;
+        max-width: 100%; 
     }
     .gallery {
-        padding-top: 6%;
-        gap: 2rem; 
-        margin: 0; 
+        display: flex;
+        flex-wrap: wrap;
+        gap: 3rem;
+        justify-content: center; 
     }
     .gallery-item {
-        flex: 1 0 30%; /* nombre IMG sur la ligne */
-        margin: 1rem;
+        flex: 1 0 45%; /* Nombre IMG par ligne */
+        max-width: 45%;
     }
     .gallery-image {
-        max-height: 500px;
+        width: 100%;
+        height: auto;
+        max-height: 700px;
         object-fit: cover;
+        transition: transform 400ms ease-out;
     }
 
     /*................... FOOTER ...................*/
