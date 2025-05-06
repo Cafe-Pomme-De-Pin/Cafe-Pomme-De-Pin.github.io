@@ -104,11 +104,15 @@
 
     /* Afichettes */
     .about_img{
-        width: 112%;
+        width: 104%;
+        object-fit: cover;
         max-width: none;
         height: auto;
         padding: 50% 0 0 0; /* Espace entre la section d'avant */
     }
+    .about_section .col-md-4 {
+        padding: 0 1.5rem;
+      }
 
     /*................... GALERIE ...................*/
 
