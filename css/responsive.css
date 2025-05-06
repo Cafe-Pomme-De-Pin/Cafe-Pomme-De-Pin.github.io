@@ -28,7 +28,7 @@
 
     /* Banniere */
     .banner_section{
-        padding-bottom: 29%;
+        padding-bottom: 30%;
     }
     .banner_taital{
         font-size: 99px;
@@ -38,13 +38,6 @@
     }
 
    /*................... INDEX ...................*/
-   
-   .row {
-        display: flex;
-        justify-content: center;
-        flex-wrap: nowrap;
-        gap: 8%; /* espace entre img */
-    }
 
     /* IMG locaux */
    .index_section {
@@ -62,13 +55,15 @@
         transition: transform 0.3s ease;  
     }
     .services_taital_index {
-        font-size: 48px;
-        text-align: center;
-        color: #012A30;
-        margin-top: 20px;
         height: 340px;
     }
-    .col-md-4 {
+    .index_section .row {
+        display: flex;
+        justify-content: center;
+        flex-wrap: nowrap;
+        gap: 8%; /* espace entre img */
+    }
+    .index_section .col-md-4 {
         flex: 0 0 33.33%;
         max-width: 33.33%;
         display: flex;
@@ -101,6 +96,46 @@
         padding-top: 15%;
     }
 
+    /*................... ABOUT ...................*/
+    
+    .about_img_texte{
+        padding-top: 10%;
+    }
+
+    /* Afichettes */
+    .about_img{
+        width: 112%;
+        max-width: none;
+        height: auto;
+        padding: 50% 0 0 0; /* Espace entre la section d'avant */
+    }
+
+    /*................... GALERIE ...................*/
+
+    .gallery-container {
+        padding: 4rem 4rem;
+        max-width: 160rem; 
+    }
+    .gallery {
+        padding-top: 6%;
+        gap: 2rem; 
+        margin: 0; 
+    }
+    .gallery-item {
+        flex: 1 0 30%; /* nombre IMG sur la ligne */
+        margin: 1rem;
+    }
+    .gallery-image {
+        max-height: 500px;
+        object-fit: cover;
+    }
+
+    /*................... FOOTER ...................*/
+    
+    /* Copyright */
+    .copyright_text {
+        font-size: 12px;
+    }
 }
 
 /*----------------------------------------- Grand écran - 1440px - 1919px ---------------------------------------------------------------------*/

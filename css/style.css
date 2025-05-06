@@ -456,6 +456,8 @@ button {
     float: left;
     margin-top: 30px;
 }
+
+/* A propos */
 .about_section_index {
     width: 100%;
     float: left; /*NE PAS RETIRER - ALIGNEMENT TEXTE + IMAGE A PROPOS*/ 
@@ -655,17 +657,14 @@ button {
 
 .gallery {
     display: flex;
-	flex-wrap: wrap;
-    /* Compenser la marge excessive sur les éléments flexibles de la galerie externe */
+	flex-wrap: wrap;     /* Compenser la marge excessive sur les éléments flexibles de la galerie externe */
 	margin: -1rem -1rem;
     padding: 11% 0 0 0;
 }
 
 .gallery-item {
-    /* Largeur minimale de 24rem et s'agrandit pour s'adapter à l'espace disponible */
-	flex: 1 0 40rem;
-    /* La valeur de la marge doit être égale à la moitié de la valeur de l'écart de grille car les marges des éléments flexibles ne s'effondrent pas */	
-    margin: 8px;
+	flex: 1 0 40rem;    /* Largeur minimale de 24rem et s'agrandit pour s'adapter à l'espace disponible */
+    margin: 8px;        /* La valeur de la marge doit être égale à la moitié de la valeur de l'écart de grille car les marges des éléments flexibles ne s'effondrent pas */	
 	overflow: hidden;
 }
 
