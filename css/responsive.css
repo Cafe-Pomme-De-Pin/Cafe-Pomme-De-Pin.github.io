@@ -24,7 +24,7 @@
     .menu_main li a {
         padding: 14px 30px; /* plus de "surface cliquable" */
         background-size: 100%; /* Taille des img onglets*/
-    }
+    }   
 
     /* Banniere */
     .banner_section{
@@ -36,6 +36,7 @@
     .banner_text{
         font-size: 25px;
     }
+
 
    /*................... INDEX ...................*/
 
@@ -115,7 +116,10 @@
       }
 
     /*................... GALERIE ...................*/
-
+    
+    .album{
+        background-color: #E9D7C0;
+    }
     .gallery-container {
         padding: 4rem 3rem;
         max-width: 100%; 
@@ -149,11 +153,23 @@
 /*----------------------------------------- Grand écran - 1440px - 1919px ---------------------------------------------------------------------*/
 @media (min-width: 1440px) and (max-width: 1919px) {
 
+    /*................... ABOUT ...................*/
+    .about_img_texte{
+        padding-top: 40%;
+    }
+
 }
 
 
 /*-----------------------------------------  HD - 1200px - 1439px -----------------------------------------------------------------------------*/
 @media (min-width: 1200px) and (max-width: 1439px) {
+
+    /*................... ABOUT ...................*/
+    .about_section_2 .row {
+        display: flex;
+        flex-wrap: wrap; /* pour conserver le responsive */
+    }
+
 
 }
 
@@ -284,15 +300,7 @@
     /* Affichettes */
     .about_section_2 .row {
         display: flex;
-        align-items: center; /* Centre verticalement les colonnes */
-        justify-content: center;
-    }
-    .about_section_2 .col-md-4 {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
-        padding: 3% 0 0 0;
+        flex-wrap: wrap; /* pour conserver le responsive */
     }
     .about_img {
         max-width: 100%;
@@ -329,6 +337,10 @@
     }
 
     /*................... GALERIE ...................*/
+
+    .album{
+        background-color: #E9D7C0;
+    }
     .gallery {
         display: flex;
         flex-wrap: wrap;
@@ -403,10 +415,267 @@
     }
 }
 
-/*----------------------------------------- Petite tablette - 768px - 991px ---------------------------------------------------------------------*/
+/*----------------------------------------- Petite tablette - 768px - 992px ---------------------------------------------------------------------*/
 /*----------------------------------------- Type Galaxy-tab, Ipad -------------------------------------------------------------------------------*/
 
-@media (min-width: 768px) and (max-width: 991px) {
+@media (min-width: 768px) and (max-width: 992px) {
+    .mobile_menu {
+        display: block;
+        width: 100%;
+    }
+    .menu_main {
+        display: none;     /* Cache la version desktop du menu */
+    }
+
+    .mobile-break { /* Permet au texte indiquer de passer a la ligne */
+        display: inline;
+    }
+
+    /* Logo */
+    .logo{
+        display: none;
+    }
+    .logo_mobile {
+        width: 100%;
+        text-align: center;     /* Centre le logo */
+        padding: 10px 0;
+        float: none;
+    }
+    .logo_mobile img {
+        max-width: 120px;
+        height: auto;
+    }
+
+    /* Menu deroulant */
+    .navbar-toggler {
+        position: absolute;
+        top: 15px;
+        right: 15px;
+        background-color: #D6877F;
+        border: none;
+        z-index: 1000;
+    }
+
+    /* BTN menu deroulant */
+    .navbar-toggler-icon {
+        background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3e%3cpath stroke='rgba%280, 0, 0, 0.7%29' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+    }
+    .navbar-collapse {
+        background-color: rgba(217, 198, 174, 0.95);
+        text-align: center;
+        padding: 10px 0;
+        width: 100%;
+        position: relative;
+        z-index: 10000;
+    }
+    .mobile_menu nav.navbar {
+        position: relative;
+        z-index: 9999; /* Permet que le fond ne prenne pas les devant sur le burger */
+    }
+    .nav-item {
+        width: 100%;
+        margin: 5px 0;
+    }
+    .nav-link {
+        font-size: 16px;
+        color: #fff !important;
+        padding: 12px;
+        border-radius: 20px;
+        transition: background 0.3s;
+    }
+    .nav-link:hover {
+        background-color: #D6877F;
+        color: #012A30 !important;
+    }
+    /* Banniere */
+    .header_main {
+        padding: 0;
+    }
+    .header_section {
+        height: auto;
+        background-size: cover;
+        padding-bottom: 20px;
+        background-image: none; /*FOND BANNIERE*/
+    }
+    .header_section_2 {
+        height: auto;
+        background-size: cover;
+        padding-bottom: 20px;
+        background-image: none; /*FOND BANNIERE*/
+        position: relative;
+        z-index: 0;
+    }
+    .banner_section {
+        background-image: none;  /*FOND TITRE*/
+        padding: 0;
+    }
+    .bg-light {
+        background-color: #E9D7C0 !important; /* Permet au header d'avoir un fond coloré lors de l'ouverture du burger */
+    }
+
+    /* Titre */
+    .banner_taital {
+        color: #012a30;
+        font-weight: bold;
+        text-align: center;
+        text-transform: uppercase;
+        font-family: 'DM+Serif+Display', serif;
+        padding-top: 20px; /* Espace au-dessus du titre */
+        margin: 0;
+    }
+
+    /* Sous titre */
+    .banner_text {
+        width: 80%;
+        margin: 0 auto;
+        font-family: 'DM+Serif+Display', serif;
+        font-size: 25px;  /* taille  texte */
+        color: #012a30;
+        text-align: center;
+        padding-bottom: 20px;
+    }
+
+    /* Bouton */
+    .read_bt {
+        width: 180px; /* Réduit la largeur du bouton */
+        margin: 20px auto 0; /* Espace au-dessus du bouton */
+        text-align: center;
+    }
+    .read_bt a {
+        width: 100%;
+        float: left;
+        font-size: 14px;  /* Réduction de la taille du texte du bouton */
+        color: #141414;
+        background-color: #F9EFE3;
+        text-align: center;
+        padding: 10px 0;
+        border-radius: 30px;
+        margin-top: 10px; /* Réduit l'espace au-dessus du bouton */
+        font-weight: 400;
+    }
+    .read_bt a:hover {
+        background-color: #2b2278;
+        color: #F9EFE3;
+    }
+
+    /* Carrousel */
+    .carousel-inner {
+        position: relative;
+        overflow: hidden;
+    }
+    .carousel-item {
+        display: block;
+        width: 100%;
+    }
+    .carousel-item img {
+        width: 100%;
+        height: auto;
+        object-fit: cover; 
+    }
+    /*................... INDEX ...................*/
+
+    
+    /* IMG Locaux*/
+    .index_section{
+        background-color: #E9D7C0;
+        background-image: none;
+    }
+    .services_taital_index {
+        font-size: 30px; 
+        color: #012A30;
+        font-weight: bold;
+        text-align: center;
+        margin-top: 20px; /* Espace au-dessus du titre */
+    }
+    .services_section_index {
+        width: 100%;
+        float: left;
+        justify-content: center;
+    }
+    .index_section .row{
+        flex-direction: unset;
+    }
+    .services_img_index {
+        width: 100%; /* Assure que 3 images sont sur la même ligne */
+        height: 200px;
+        background-color: #E9D7C0;
+    }
+    .services_text {
+        font-size: 14px; 
+        text-align: center;   /* Ajuste le texte sous les images */
+        color: #1f1f1f;
+        margin-top: 10px;
+    }
+    
+
+    /* A propos */
+
+    .about_taital_main_index{
+        padding: 0;
+    }
+
+    .about_img_texte_index {
+        width: 100%;
+        float: none; /* L'image prend toute la largeur */
+        margin: 0px;
+        padding-top: 20%;
+    }
+    .about_img_index {
+        padding-top: 13%;
+    } 
+
+    /*................... ABOUT ...................*/
+    .about_section {
+        padding-bottom: 40px;
+    }
+    .about_taital_main {
+        padding: 20px;
+        padding-top: 40px;
+    }
+    .about_taital {
+        font-size: 26px;
+        text-align: center;
+        color: #012A30;
+    }
+    .about_text {
+        font-size: 15px;
+        padding-top: 20px;
+        text-align: justify;
+    }
+    .about_img_texte {
+        width: 100%;  
+        display: block;
+        margin: 0 auto 0 -2%; /* centré img */
+        padding-top: 14%;
+    }
+    .row {
+        display: flex;
+        flex-direction: column; /* empiler les blocs */
+        align-items: center;    /* centrer horizontalement */
+    }
+    .col-md-6 {
+        max-width: 600px;
+        width: 100%;
+    }
+    .padding_right_0 {
+        padding-right: 0 !important;
+    }
+
+    /*Affichette*/
+    .about_section .layout_padding {
+        padding-top: 15%;
+    }
+    .about_section_2 .row{
+        flex-direction: unset;
+    }
+    .about_section_2 .col-md-4{
+        padding: 4px;
+    }
+
+    /*................... ABOUT ...................*/
+    .services_taital {
+        text-align: center;
+    }
 
 }
 
@@ -684,6 +953,10 @@
     }
     
     /*................... GALERIE ...................*/
+
+    .album{
+        background-color: #E9D7C0;
+    }
     .gallery {
         display: flex;
         flex-wrap: wrap;
