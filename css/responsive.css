@@ -717,14 +717,17 @@
         position: absolute;
         top: 15px;
         right: 15px;
-        background-color: #D6877F;
         border: none;
         z-index: 1000;
+        font-size: 1.80rem;
     }
 
     /* BTN menu deroulant */
     .navbar-toggler-icon {
-        background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3e%3cpath stroke='rgba%280, 0, 0, 0.7%29' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+        background-image: url("../images/burger.png") !important;
+    }
+   .navbar-toggler-icon.active {
+        background-image: url("../images/burger_hover.png") !important;
     }
     .navbar-collapse {
         background-color: rgba(217, 198, 174, 0.95);
