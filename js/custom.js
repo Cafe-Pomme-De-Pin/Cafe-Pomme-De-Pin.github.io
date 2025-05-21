@@ -384,4 +384,11 @@ $(function () {
 		});
 	});
 
+	/* Hover burger */
+	const burger = document.querySelector('.navbar-toggler-icon');
+
+		burger.addEventListener('click', function () {
+		this.classList.toggle('active');
+		});
+
 });
