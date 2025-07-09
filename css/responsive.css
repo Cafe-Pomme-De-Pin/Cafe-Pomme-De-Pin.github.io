@@ -28,7 +28,8 @@
 
     /* Banniere */
     .banner_section{
-        padding-bottom: 30%;
+        padding-bottom: 27%;
+        background-size: 91%; /* Taille des img onglets*/
     }
     .banner_taital{
         font-size: 99px;
