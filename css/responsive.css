@@ -16,6 +16,12 @@
 @media (min-width: 1920px) {
     /* Navbar */
     /* Onglets */
+    .mobile_menu {
+        display: none !important;    /* Menu mobile caché */
+    }
+    .menu_main {
+        display: block !important;   /* Menu desktop visible */
+    }
     .menu_main li {
         font-size: 22px;
         padding-top: 14px;
@@ -25,6 +31,15 @@
         padding: 14px 30px; /* plus de "surface cliquable" */
         background-size: 100%; /* Taille des img onglets*/
     }   
+    
+
+    /* Logo */
+    .logo {
+        display: block;       /* affiche le logo desktop */
+    }
+    .logo_mobile {
+        display: none;        /* cache le logo mobile */
+    }
 
     /* Banniere */
     .banner_section{
@@ -433,7 +448,8 @@
     }
 
     /* Logo */
-    .logo{
+    /* Logo desktop masqué en mobile */
+    .logo {
         display: none;
     }
     .logo_mobile {
@@ -441,10 +457,12 @@
         text-align: center;     /* Centre le logo */
         padding: 10px 0;
         float: none;
+        display: block;
     }
-    .logo_mobile img {
-        max-width: 120px;
-        height: auto;
+    /* Logo détourage */
+    .logo_mobile img { 
+        padding: 10px;
+        max-width: 130px;         
     }
 
     /* Menu deroulant */
@@ -489,14 +507,13 @@
         color: #012A30 !important;
     }
     /* Banniere */
-    .header_main {
-        padding: 0;
-    }
     .header_section {
-        height: auto;
-        background-size: cover;
-        padding-bottom: 20px;
-        background-image: none; /*FOND BANNIERE*/
+        background-image: url('../images/gland.png'); /* image mobile */
+        background-color: #E9D7C0; 
+    }
+    .header_main {
+        background: none;   /* évite une 2e image par-dessus */
+        padding-top: 15px;  
     }
     .header_section_2 {
         height: auto;
@@ -691,11 +708,13 @@
         width: 100%;
     }
     .menu_main {
-        display: none;     /* Cache la version desktop du menu */
+        display: none !important;     /* Cache la version desktop du menu */
     }
-
-    .mobile-break { /* Permet au texte indiquer de passer a la ligne */
-        display: inline;
+    .mobile_menu {
+        display: block !important;
+    }
+    .mobile-break { 
+        display: inline; /* Permet au texte indiquer de passer a la ligne */
     }
 
     /* Logo */
@@ -708,10 +727,12 @@
         padding: 10px 0;
         float: none;
     }
-    .logo_mobile img {
-        max-width: 120px;
-        height: auto;
+    /* Logo détourage */
+    .logo_mobile img { 
+        padding: 10px;
+        max-width: 130px;   
     }
+    
 
     /* Menu deroulant */
     .navbar-toggler {
@@ -757,15 +778,15 @@
         background-color: #D6877F;
         color: #012A30 !important;
     }
+
     /* Banniere */
-    .header_main {
-        padding: 0;
-    }
     .header_section {
-        height: auto;
-        background-size: cover;
-        padding-bottom: 20px;
-        background-image: none; /*FOND BANNIERE*/
+        background-image: url('../images/gland.png'); /* image mobile */
+        background-color: #E9D7C0; 
+    }
+    .header_main {
+        background: none;   /* évite une 2e image par-dessus */
+        padding-top: 15px;  
     }
     .header_section_2 {
         height: auto;
@@ -779,32 +800,57 @@
         background-image: none;  /*FOND TITRE*/
         padding: 0;
     }
-    .bg-light {
-        background-color: #E9D7C0 !important; /* Permet au header d'avoir un fond coloré lors de l'ouverture du burger */
-    }
+
 
     /* Titre */
+    /*.banner_taital {
+        font-size: 35px;  /* Taille titre */
+       /* color: #012a30;
+        font-weight: bold;
+        text-align: center;
+        text-transform: uppercase;
+        font-family: 'DM+Serif+Display', serif;
+        padding-top: 20px; /* Espace au-dessus du titre */
+       /* margin: 0;
+    }*/
+    /* Titre dans rectangle beige */
     .banner_taital {
+        background: #E9D7C0;
+        display: inline-block;     /* rectangle s’adapte au texte */
+        padding: 6px 14px;
+        border-radius: 8px;
+        margin-top: 15px;
         font-size: 35px;  /* Taille titre */
         color: #012a30;
         font-weight: bold;
         text-align: center;
         text-transform: uppercase;
         font-family: 'DM+Serif+Display', serif;
-        padding-top: 20px; /* Espace au-dessus du titre */
-        margin: 0;
     }
 
     /* Sous titre */
-    .banner_text {
+    /*.banner_text {
         width: 80%;
         margin: 0 auto;
         font-family: 'DM+Serif+Display', serif;
         font-size: 14px;  /* taille  texte */
-        color: #012a30;
+        /*color: #012a30;
         text-align: center;
         padding-bottom: 20px;
+    }*/
+    /* Sous-titre dans rectangle légèrement transparent */
+    .banner_text {
+        background: #E9D7C0;
+        padding: 6px 12px;
+        border-radius: 6px;
+        font-size: 14px;
+        font-family: 'DM+Serif+Display', serif;
+        font-size: 14px;  /* taille  texte */
+        color: #012a30;
+        text-align: center;
+        margin: 0 auto;
     }
+
 
     /* Bouton */
     .read_bt {
@@ -872,7 +918,6 @@
     }
     .col-md-4 {
         width: 100%; /* Utilise une largeur fixe pour les 3 images */
-        margin-bottom: 20px;
     }
     .services_text {
         font-size: 14px; 
